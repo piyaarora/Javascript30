@@ -3,9 +3,6 @@
 const playBeat = (e) => {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    key.addEventListener('click', function () {
-        console.log(key)
-    })
     if (!audio) return;
     audio.currentTime = 0;
     audio.play();
