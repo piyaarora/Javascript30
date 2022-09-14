@@ -1,5 +1,5 @@
-- Wall Clock using CS and javascript.
+Wall Clock using CS and javascript.
 
 ***Core concepts***
-css: transform: rotate and translate functions.
-js: Date function
+- css: transform: rotate and translate functions.
+- js: Date function

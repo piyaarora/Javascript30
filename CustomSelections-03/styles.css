@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --base: #ffc600;
+    --contrast: 80%;
+    --spacing: 10px;
+    --blur: 3px;
+
+}
+
+.theme-light {
+    --toggle-background-color: #0060df;
+    --background-color: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+}
+
+.theme-dark {
+    --toggle-background-color: #17ed90;
+    --background-color: #2a2c2d;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+}
+
+.container {
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--font-color);
+    font-size: 3rem;
+}
+
+.heading span {
+    color: var(--base);
+}
+
+.img-container {
+    text-align: center;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+img {
+    height: 70vh;
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: contrast(var(--contrast)) blur(var(--blur));
+}
+
+.controls {
+    height: auto;
+    width: 30vh;
+    background: rgb(179, 179, 179);
+    padding: 2rem;
+    border-radius: 20px;
+    display: none;
+}
+
+.settings {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+.settings svg {
+    fill: var(--base) !important;
+}
+
+.show {
+    display: block;
+}
+
+
+
+label {
+    display: block;
+    margin: 10px auto;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked+.slider {
+    background-color: #2196f3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
