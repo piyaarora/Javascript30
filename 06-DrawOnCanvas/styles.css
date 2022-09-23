@@ -1,0 +1,80 @@
+.container {
+    height: 80vh;
+    width: 100vh;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.btn {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(19, 19, 88);
+    background: none;
+    border: 0.8px solid rgb(207, 205, 205);
+    position: relative;
+}
+
+.btn:hover {
+    background: rgba(212, 203, 203, 0.235);
+}
+
+.color-btn {
+    width: 80px;
+    padding: 5px 5px;
+    position: relative;
+}
+
+.show-list {
+    display: flex;
+}
+
+.size-btn {
+    padding: 5px;
+}
+
+.size-btn span {
+    margin: 0 8px;
+}
+
+.size-list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    left: 0;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0px 4px 30px rgba(165, 190, 204, 0.25);
+    border: 0.8px solid rgb(207, 205, 205);
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.show-list {
+    display: flex;
+}
+
+.size-list li {
+    width: 85%;
+}
+
+.size-list li div {
+    width: 100%;
+    height: var(--set-size);
+    background-color: rgb(19, 19, 88);
+    margin-bottom: 10px;
+    cursor: pointer;
+}

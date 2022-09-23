@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+        integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <h1>Draw on Canvas</h1>
+    <div class="container">
+        <canvas id="draw"></canvas>
+    </div>
+    <div class="controls">
+        <button type="button" title="Eraser" onclick="erase()" class="btn"><i class="fa-solid fa-eraser"></i></button>
+
+        <button type="button" title="Save Sketch" onclick="onSave()" class="btn"><i class="fa-solid fa-floppy-disk"></i>
+        </button>
+
+        <button type="button" title="Magic Pen" onclick="magicPen()" class="btn"><i class="fa fa-magic"
+                aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="color-btn btn">
+            <input type="color" id="color-picker">
+            <label for="color-picker">
+                Color
+            </label>
+        </button>
+
+        <button onclick="sizing()" class="size-btn btn">
+            <i class="fa-solid fa-pen"></i><span>Size</span><i class="fa-solid fa-caret-down"></i>
+            <ul class="size-list">
+                <li>
+                    <div class="size" style="--set-size:02px"></div>
+                </li>
+                <li>
+                    <div class="size" style="--set-size:05px"></div>
+                </li>
+                <li>
+                    <div class="size" style="--set-size:08px"></div>
+                </li>
+                <li>
+                    <div class="size" style="--set-size:10px"></div>
+                </li>
+                <li>
+                    <div class="size" style="--set-size:15px"></div>
+                </li>
+            </ul>
+        </button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
