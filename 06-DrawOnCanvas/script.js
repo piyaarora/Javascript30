@@ -28,6 +28,7 @@ const colorPick = () => {
 }
 
 // save format for javascript file
+{/* <button onclick="download('file text', 'myfilename.txt', 'text/plain')">Create file</button> */ }
 // function download(text, name, type) {
 //     var a = document.getElementById("a");
 //     var file = new Blob([text], { type: type });
