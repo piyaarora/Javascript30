@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="" class="logo">FOOD HUB</a>
+            <button class="favs" onclick="seeAllFavouriteRestro()">Favourities</button>
+        </div>
+        <div class="form-group">
+            <label for="">Search</label>
+            <input type="text" class="search" value="" onkeyup="search()">
+        </div>
+        <div class="form-group inline">
+            <select name="sort" id="sorting" onclick="sorting()" class="dropdown">
+                <option value="select">Sort By</option>
+
+                <option value="eta">Sort by ETA</option>
+                <option value="ratings">Sort by Ratings</option>
+            </select>
+        </div>
+
+        <div class="form-group inline">
+            <select name="filters" id="filters" class="dropdown">
+                <option value="select">FIlter By</option>
+                <option value="North Indian">North Indian</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="South Indian">South Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Healthy">Healthy</option>
+                <option value="Street Food">Street Food</option>
+                <option value="Continental">Continental</option>
+                <option value="Thalis">Thalis</option>
+            </select>
+        </div>
+
+        <div class="cards-wrapper"></div>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

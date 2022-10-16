@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 2rem;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loadData {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.loading {
+    width: 1%;
+    height: inherit;
+    background: rgb(73, 199, 73);
+}

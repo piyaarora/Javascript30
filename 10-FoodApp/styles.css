@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    margin: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.favs {
+    margin-left: auto;
+}
+
+.search {
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    padding: 1.5rem 0 1rem;
+    ;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cards-wrapper {
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.res-card {
+    border: 1px solid #000;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 14.5rem;
+    line-height: 1.5;
+}
+
+
+.icon {
+    color: #daa520;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.dropdown {
+    padding: 0.2rem 0;
+    text-align: center;
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+}
+
+.fav {
+    margin-top: .5rem;
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#fa-heart {
+    color: #c8cbd3;
+}
+
+#fa-heart-red {
+    color: #da3737;
+}
+
+#fa-heart:hover {
+    color: #da3737;
+}
+
+#fa-heart:active {
+    color: #da3737;
+}

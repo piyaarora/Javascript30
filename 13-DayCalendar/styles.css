@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-cont {
+    height: 100vh;
+    width: 100%;
+}
+
+.days-cont {
+    position: relative;
+}
+
+.hours {
+    border-top: 1px dashed #000;
+    position: absolute;
+    width: 100%;
+}
+
+.descriptionBox {
+    border: 1px solid #000;
+    border-radius: 9px;
+    width: 80%;
+    right: 0;
+    position: absolute;
+    background: #00abf0;
+}
+
+.descriptionBox h5,
+.descriptionBox p {
+    margin: 0;
+    padding: 0.2rem 0.4rem 0;
+}
