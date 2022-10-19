@@ -56,6 +56,11 @@ toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(skipBtn => skipBtn.addEventListener('click', updateSkipValues));
 ranges.forEach(range => range.addEventListener('click', updateRange));
 
+let mouseDown = false;
 video.addEventListener('timeupdate', updateProgress)
 progress.addEventListener('click', scrub)
+progress.addEventListener('mousedown', () => mouseDown = true)
+progress.addEventListener('mouseup', () => mouseDown = false)
+progress.addEventListener('mouseover', (e) => mouseDown && scrub(e))
+
 
