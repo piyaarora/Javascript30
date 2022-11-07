@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="bod">
+
+    <div class="one">
+        <div class="two">
+            <div class="three">
+            </div>
+        </div>
+    </div>
+    <button></button>
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        div {
+            width: 100%;
+            padding: 100px;
+        }
+
+        .one {
+            background: thistle;
+        }
+
+        .two {
+            background: mistyrose;
+        }
+
+        .three {
+            background: coral;
+        }
+
+    </style>
+
+
+    <script>
+        const divs = document.querySelectorAll('div');
+        const button = document.querySelector('button');
+
+        const logText = (e) => {
+            console.log(e.currentTarget.classList.value)
+            // e.stopPropagation(); // stop bubbling!
+
+        }
+
+        divs.forEach(div => div.addEventListener('click', logText, {
+            capture: false,
+            // once: true //triggers all the classes at once
+        }))
+
+        button.addEventListener('click', () => {
+            console.log('Click!!!');
+        }, {
+            once: true
+        });
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- 
+1. event bubbling meaning triggering from child to parent(
+    clicked on second div triggers -> second and first
+    clicked on third div triggers -> third, second, first
+)
+2. e.stoppropagation stops event bubbling
+3. if caputure is true -> it triggers event propogation(trigger on parent triggers child as well)
+4. if capture is false -> it triggers event bubbling 
+5. once: true -> only allow click once (mostly used with buttons)
+
+   -->

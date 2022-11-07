@@ -1,0 +1,3 @@
+- window.scrollX and window.scrollY
+- elem.offsetX and elem.offsetY, offsetTop and height
+- css dynamic add and remove classes on the basis of scroll.
